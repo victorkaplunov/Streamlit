@@ -1,5 +1,8 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
 
-st.title('Streamlit test app')
+st.set_page_config(
+   page_title="Streamlit test app",
+   page_icon="🧊",
+   layout="wide",
+   initial_sidebar_state="expanded",
+)
