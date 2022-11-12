@@ -29,6 +29,9 @@ with tab3:
 st.sidebar.write("My Sidebar")
 
 # To add elements in the sidebar
-st.sidebar("element")
+st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
 
 st.write(dict_, unsafe_allow_html=True)
