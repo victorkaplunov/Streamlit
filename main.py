@@ -25,4 +25,10 @@ with tab3:
    st.header("An owl")
    st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
 
+# To create the sidebar
+st.sidebar.write("My Sidebar")
+
+# To add elements in the sidebar
+st.sidebar("element")
+
 st.write(dict_, unsafe_allow_html=True)
