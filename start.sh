@@ -1,0 +1,1 @@
+streamlit run /Users/victorkaplunov/PycharmProjects/Streamlit/main.py
