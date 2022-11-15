@@ -1,1 +1,1 @@
-C:\Users\user\PycharmProjects\Streamlit>streamlit run C:/Users/user/PycharmProjects/Streamlit/main.py
+streamlit run /Users/victorkaplunov/PycharmProjects/Streamlit/main.py
