@@ -4,7 +4,7 @@ st.set_page_config(
    page_title="Streamlit test app",
    page_icon="🧊",
    layout="wide",
-   initial_sidebar_state="expanded",
+   initial_sidebar_state="auto",
 )
 
 st.title("Streamlit test app")
@@ -102,8 +102,15 @@ with tab2:
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
 
 with tab3:
-   st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
+   st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
+
+   with st.expander("See explanation"):
+      st.write("""
+           The chart above shows some numbers I picked for you.
+           I rolled actual dice for these, so they're *guaranteed* to
+           be random.
+       """)
+      st.image("https://static.streamlit.io/examples/dice.jpg")
 
 # To create the sidebar
 st.sidebar.write("My Sidebar")
