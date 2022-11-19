@@ -1,1 +1,1 @@
-streamlit run C:/Users/user/PycharmProjects/Streamlit/Home.py
+C:/Users/user/PycharmProjects/Streamlit/venv/Scripts/streamlit.exe run C:/Users/user/PycharmProjects/Streamlit/Home.py
