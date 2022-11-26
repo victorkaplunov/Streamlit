@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_echarts import st_echarts
 import utils
 
-db_client = utils.SqlClient()
+# db_client = utils.SqlClient()
 
 st.set_page_config(
     page_title="QA Job stat",

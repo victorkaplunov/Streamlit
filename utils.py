@@ -10,36 +10,36 @@ def years_tuple():
     return 2019, 2020, 2021, 2022
 
 
-class SqlClient:
-    def __init__(self):
-        self.engine = sqlalchemy.create_engine(
-            'sqlite:///testdb.db',
-            connect_args={'check_same_thread': False},
-            encoding='utf8'
-        )
-        self.connection = self.engine.connect()
-        self.metadata = sqlalchemy.MetaData()
-        self.charts = sqlalchemy.Table('charts', self.metadata,
-                                       autoload=True, autoload_with=self.engine
-                                       )
-
-    def languages(self):
-        """Отдает один идентификатор новости (первой по счету)."""
-        with Session(bind=self.connection.engine) as session:
-            response = session.execute(
-                select(self.charts.columns.data,
-                       self.charts.columns.popularity,
-                       self.charts.columns.year)
-                .where(self.charts.columns.chart_name == 'languages')) \
-                .all()
-        response_list_of_lists = list([['Language', 'Popularity', 'Year']])
-        for row in response:
-            response_list_of_lists.append([
-                row['data'], row['popularity'], row['year']]
-            )
-        output = list(response_list_of_lists)
-        print(output)
-        return output
+# class SqlClient:
+#     def __init__(self):
+#         self.engine = sqlalchemy.create_engine(
+#             'sqlite:///testdb.db',
+#             connect_args={'check_same_thread': False},
+#             encoding='utf8'
+#         )
+#         self.connection = self.engine.connect()
+#         self.metadata = sqlalchemy.MetaData()
+#         self.charts = sqlalchemy.Table('charts', self.metadata,
+#                                        autoload=True, autoload_with=self.engine
+#                                        )
+#
+#     def languages(self):
+#         """Отдает один идентификатор новости (первой по счету)."""
+#         with Session(bind=self.connection.engine) as session:
+#             response = session.execute(
+#                 select(self.charts.columns.data,
+#                        self.charts.columns.popularity,
+#                        self.charts.columns.year)
+#                 .where(self.charts.columns.chart_name == 'languages')) \
+#                 .all()
+#         response_list_of_lists = list([['Language', 'Popularity', 'Year']])
+#         for row in response:
+#             response_list_of_lists.append([
+#                 row['data'], row['popularity'], row['year']]
+#             )
+#         output = list(response_list_of_lists)
+#         print(output)
+#         return output
 
 
 def get_vacancy_count_by_year(cursor):
