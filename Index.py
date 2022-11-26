@@ -319,25 +319,25 @@ options = {
                     {
                         'subtext': '2019',
                         'left': '75%',
-                        'top': '20%',
+                        'top': '15%',
                         'textAlign': 'center'
                     },
                     {
                         'subtext': '2020',
                         'left': '75%',
-                        'top': '40%',
+                        'top': '35%',
                         'textAlign': 'center'
                     },
                     {
                         'subtext': '2021',
                         'left': '75%',
-                        'top': '60%',
+                        'top': '55%',
                         'textAlign': 'center'
                     },
                     {
                         'subtext': '2022',
                         'left': '75%',
-                        'top': '80%',
+                        'top': '75%',
                         'textAlign': 'center'
                     }
                 ],
