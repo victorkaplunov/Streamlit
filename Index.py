@@ -91,7 +91,7 @@ options = {
         'timeline': {
             # 'axisType': 'category',
             'orient': 'horizontal',
-            'autoPlay': True,
+            'autoPlay': False,
             # 'inverse': True,
             'playInterval': 2000,
             # 'left': None,
