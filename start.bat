@@ -1,1 +1,1 @@
-C:/Users/user/PycharmProjects/Streamlit/venv/Scripts/streamlit.exe run C:/Users/user/PycharmProjects/Streamlit/main.py
+C:/Users/user/PycharmProjects/Streamlit/venv/Scripts/streamlit.exe run C:/Users/user/PycharmProjects/Streamlit/Index.py
